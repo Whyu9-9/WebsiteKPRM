@@ -56,7 +56,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="/logout/pemilih">
-              <i class="material-icons">exit_to_app</i> Logout
+              <i class="material-icons">exit_to_app</i> Keluar
             </a>
           </li>
         </ul>
@@ -90,7 +90,9 @@
   <div class="main main-raised">
     <div class="container">
       <div class="section text-center">
+        @if($pemilihan->isEmpty())
         <h2 class="title">Kandidat Calon Ketua BEM FISIP 2020</h2>
+        <h5 class="description">Silahkan lihat dan pilihlah kandidat ketua bem sesuai hatimu.</h5>
         <div class="team">
           <div class="row">
            
@@ -129,7 +131,7 @@
                      </p>
                   </div>
                   <div class="card-footer justify-content-center">
-                  <button class="btn btn-info btn-round" style="width:50% !important" onclick="location.href='/kandidat/{{$i->id}}'">
+                  <button class="btn btn-danger btn-round" style="width:50% !important" onclick="location.href='/kandidat/{{$i->id}}'">
                      <i class="material-icons">person</i> Lihat kandidat
                    </button> 
                   </div>
@@ -143,9 +145,9 @@
           
         </div>
       </div>
-       <div class="section text-center">
+      @else
         <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
+          <div class="col-md-6 ml-auto mr-auto">
             <h2 class="title">Lihat Hasil </h2>
             <h5 class="description">Hasil Penghitungan Suara KPRM 2020 dapat dilihat dengan menekan tombol di bawah ini.</h5>
              <button class="btn btn-danger btn-round" style="width:50% !important" onclick="location.href='/quickcount'">
@@ -153,16 +155,20 @@
                    </button>  
           </div>
         </div>
-      </div>
+      @endif
 
-      <div class="section section-contacts">
-
-      </div>
+      
     </div>
+  </div>
   </div>
   <footer class="footer footer-default">
     <div class="container">
-      
+      <div class="copyright float-center">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+      </div>
     </div>
   </footer>
   <!--   Core JS Files   -->

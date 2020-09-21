@@ -49,7 +49,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="title text-center" id="demo">Quick Count</h1>
+          <h1 class="title text-center" id="demo">Hasil Pemilihan</h1>
             <div class="row">
               <div class="col-md-2">
                 
@@ -70,20 +70,19 @@
             <div class="row">
             <div class="col-md-9 ml-auto mr-auto">
               <div class="card-body">
-                <h4 class="card-title">Statistik Hasil Pemilihan</h4>
-                </div>
-              <div class="card card-chart">
-                          <div class="card-header card-header-danger">
-                          <canvas id="canvas" style="color:aliceblue"></canvas>
-                          </div>
-                          <div class="card-footer">
-                          <div class="stats">
-                              <i class="material-icons">access_time</i> <div id="txt">time stamp</div>
-                          </div>
-                          </div>
-                      
-                      </div>
+                <h3 class="card-title">Statistik Hasil Pemilihan</h3>
               </div>
+              <div class="card card-chart">
+                <div class="card-header card-header-danger">
+                  <canvas id="canvas" style="color:aliceblue"></canvas>
+                </div>
+                <div class="card-footer">
+                  <div class="stats">
+                    <i class="material-icons">access_time</i> <div id="txt">time stamp</div>
+                  </div>
+                </div>          
+              </div>
+            </div>
         </div>
         </div>
         @else
@@ -187,7 +186,7 @@
 					},
                     scaleFontColor: "#FFFFFF",
 					title: {
-						display: true,
+						display: false,
 						text: 'Hasil pemilihan'
 					},
                     scales: {
