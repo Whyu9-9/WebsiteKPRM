@@ -22,11 +22,9 @@
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-          <button class="btn btn-danger btn-round" style=" !important" onclick="location.href='/'">
+          <button class="btn btn-info btn-round" style=" !important" onclick="location.href='/'">
                      <i class="material-icons">keyboard_backspace</i> 
                    </button>  
-        <a class="navbar-brand" href="/">
-          KPRM 2020 </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -38,7 +36,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="/logout/pemilih">
-              <i class="material-icons">exit_to_app</i> Logout
+              <i class="material-icons">exit_to_app</i> Keluar
             </a>
           </li>
         </ul>
@@ -73,7 +71,7 @@
                 <h3 class="card-title">Statistik Hasil Pemilihan</h3>
               </div>
               <div class="card card-chart">
-                <div class="card-header card-header-danger">
+                <div class="card-header card-header-info">
                   <canvas id="canvas" style="color:aliceblue"></canvas>
                 </div>
                 <div class="card-footer">
@@ -166,9 +164,9 @@
                         minBarLength: 2,
                         data: JSON.parse({!! json_encode($hasil) !!}),
                         backgroundColor: [
-                        'rgba(141, 2, 31, 3)',
-                        'rgba(128, 0, 0, 1)',
-                        'rgba(194, 24, 7, 1)'
+                        'rgba(0, 32, 255, 1)',
+                        'rgba(0, 64, 255, 1)',
+                        'rgba(0, 96, 255, 1)'
                         
                         ]
                     }]

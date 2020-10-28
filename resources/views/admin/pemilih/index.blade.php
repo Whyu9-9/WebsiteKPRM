@@ -38,11 +38,9 @@
                           Nama
                         </th>
                         <th>
-                          Prodi
+                          Angkatan
                         </th>
-                        <th>
-                          Password
-                        </th>
+                        
                         <th>
                           Aksi
                         </th>
@@ -58,11 +56,9 @@
                               {{$i->nama}}
                             </td>
                             <td>
-                              {{$i->prodi}}
+                              {{$i->angkatan}}
                             </td>
-                            <td>
-                              {{$i->password}}
-                            </td>
+                            
                             
                             <td class="td-actions text-left">
                             <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-link btn-sm" onclick="location.href='../admin/pemilih/{{$i->id}}/edit'">

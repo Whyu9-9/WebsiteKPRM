@@ -90,7 +90,7 @@
                           Nama
                         </th>
                         <th>
-                          Prodi
+                          Angkatan
                         </th>
                     </thead>
                     <tbody>
@@ -103,7 +103,7 @@
                               {{$i->nama}}
                             </td>
                             <td>
-                              {{$i->prodi}}
+                              {{$i->angkatan}}
                             </td>
                       </tr>
                       @endforeach
@@ -139,7 +139,7 @@
                           Nama
                         </th>
                         <th>
-                          Prodi
+                          Angkatan
                         </th>
                     </thead>
                     <tbody>
@@ -152,7 +152,7 @@
                               {{$i->nama}}
                             </td>
                             <td>
-                              {{$i->prodi}}
+                              {{$i->angkatan}}
                             </td>
                       </tr>
                       @endforeach

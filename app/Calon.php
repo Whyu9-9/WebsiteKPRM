@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Calon extends Model
 {
-    protected $fillable = ['nim','nama','angkatan','prodi','deskripsi','visi','misi','foto'];
+    protected $fillable = ['nim','nama','angkatan','deskripsi','visi','misi','foto'];
 }

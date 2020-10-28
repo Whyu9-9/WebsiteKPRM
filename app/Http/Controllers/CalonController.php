@@ -40,7 +40,6 @@ class CalonController extends Controller
         $this->validate($request, [
             'nim' => 'required',
             'nama' => 'required',
-            'prodi' => 'required',
             'deskripsi' => 'required',
             'visi' => 'required',
             'misi' => 'required',
@@ -60,7 +59,6 @@ class CalonController extends Controller
         $calon->nim = $request->nim;
         $calon->nama = $request->nama;
         $calon->angkatan = $request->angkatan;
-        $calon->prodi = $request->prodi;
         $calon->deskripsi = $request->deskripsi;
         $calon->visi = $request->visi;
         $calon->misi = $request->misi;
@@ -111,7 +109,6 @@ class CalonController extends Controller
         $this->validate($request, [
             'nim' => 'required',
             'nama' => 'required',
-            'prodi' => 'required',
             'deskripsi' => 'required',
             'visi' => 'required',
             'misi' => 'required'
@@ -130,7 +127,6 @@ class CalonController extends Controller
         $calon->nim = $request->nim;
         $calon->nama = $request->nama;
         $calon->angkatan = $request->angkatan;
-        $calon->prodi = $request->prodi;
         $calon->deskripsi = $request->deskripsi;
         $calon->visi = $request->visi;
         $calon->misi = $request->misi;

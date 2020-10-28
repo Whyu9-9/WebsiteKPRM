@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    KPRM 2020
+    KPRM Himanika 2020
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -21,11 +21,9 @@
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <button class="btn btn-danger btn-round" style=" !important" onclick="location.href='/'">
+        <button class="btn btn-info btn-round" style=" !important" onclick="location.href='/'">
                      <i class="material-icons">keyboard_backspace</i> 
                    </button>  
-        <a class="navbar-brand" href="/">
-          KPRM 2020 </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -37,7 +35,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="/logout/pemilih">
-              <i class="material-icons">exit_to_app</i> Logout
+              <i class="material-icons">exit_to_app</i> Keluar
             </a>
           </li>
         </ul>
@@ -56,7 +54,7 @@
               </div>
               <div class="name">
                 <h3 class="title">{{$calon->nama}}</h3>
-                <h6>Prodi {{$calon->prodi}}</h6>
+                <h6>Angkatan {{$calon->angkatan}}</h6>
                
               </div>
             </div>
@@ -70,12 +68,12 @@
             <div class="profile-tabs">
               <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#" role="tab" data-toggle="tab">
+                  <a class="nav-link active" href="#studio" role="tab" data-toggle="tab">
                     <i class="material-icons">visibility</i> Visi
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" role="tab" data-toggle="tab">
+                  <a class="nav-link" href="#works" role="tab" data-toggle="tab">
                     <i class="material-icons">directions_run</i> Misi
                   </a>
                 </li>
@@ -86,18 +84,18 @@
         <div class="tab-content tab-space ">
           <div class="tab-pane active  gallery" id="studio">
             <div class="row">
-              <div class="col-md-5 " style="margin-left:18rem !important">
-                <div class="description text-left">
-                    {!! $calon->visi !!} 
+              <div class="col-md-5 " style="margin:auto !important">
+                <div class="description text-justify">
+                    <b>{!! $calon->visi !!}</b> 
                 </div>
               </div>
             </div>
           </div>
           <div class="tab-pane text-center gallery" id="works">
             <div class="row">
-             <div class="col-md-5 " style="margin-left:18rem !important">
-                <div class="description text-left">
-                    {!! $calon->misi !!} 
+             <div class="col-md-5 " style="margin:auto !important">
+                <div class="description text-justify">
+                    <b>{!! $calon->misi !!}</b> 
                 </div>
               </div>
             </div>
@@ -115,7 +113,7 @@
               <form action="../vote/{{$calon->id}}" method="post">
                      @csrf
                      <input type="text" hidden name="pemilih" value="{{$pemilih->id}}">
-                   <button class="btn btn-danger btn-round" type="submit" style="width:75% !important" onclick="location.href=''">
+                   <button class="btn btn-info btn-round" type="submit" style="width:75% !important" onclick="location.href=''">
                      <i class="material-icons">how_to_vote</i> Pilih Kandidat
                    </button> 
                 </form>
@@ -131,9 +129,7 @@
     </div>
   </div>
   <footer class="footer footer-default">
-    <div class="container">
-      
-    </div>
+    
   </footer>
   <!--   Core JS Files   -->
   <script src={{asset('pemilih/assets/js/core/jquery.min.js')}} type="text/javascript"></script>

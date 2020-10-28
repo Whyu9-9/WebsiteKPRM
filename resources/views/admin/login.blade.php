@@ -28,7 +28,7 @@
 				
 			<div class="wrap-login100">
 				
-				<div class="login100-pic js-tilt" data-tilt>
+				<div class="login100-pic js-tilt">
 					<img src={{asset('login/images/img-02.png')}} alt="IMG">
 				</div>
 
@@ -43,7 +43,7 @@
 						<input class="input100" type="text" name="username" placeholder="Username" data-validate = "Username is required">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-" aria-hidden="true"></i>
+							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -86,11 +86,7 @@
 	<script src={{asset('login/vendor/select2/select2.min.js')}}></script>
 <!--===============================================================================================-->
 	<script src={{asset('login/vendor/tilt/tilt.jquery.min.js')}}></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
+	
 <!--===============================================================================================-->
 	<script src={{asset('login/js/main.js')}}></script>
 

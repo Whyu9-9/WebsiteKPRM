@@ -52,7 +52,7 @@
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
               <div class="card card-chart">
-                <div class="card-header card-header-danger">
+                <div class="card-header card-header-info">
                   <canvas id="Canvass" style="color:aliceblue"></canvas>
                 </div>
                           <div class="card-body">
@@ -73,7 +73,6 @@
           @endif
       </div>
         </div>
-      </div>
       
 @endsection
 @section('timer')
@@ -111,14 +110,14 @@
 			datasets: [{
                         label: 'Jumlah Pemilih',
                         barPercentage: 0.5,
-                        barThickness: 100,
+                        barThickness: 80,
                         maxBarThickness: 100,
                         minBarLength: 2,
                         data: JSON.parse({!! json_encode($hasil) !!}),
                         backgroundColor: [
-                        'rgba(141, 2, 31, 3)',
-                        'rgba(128, 0, 0, 1)',
-                        'rgba(194, 24, 7, 1)'
+                        'rgba(0, 32, 255, 1)',
+                        'rgba(0, 64, 255, 1)',
+                        'rgba(0, 96, 255, 1)'
                         
                         ]
                     }]

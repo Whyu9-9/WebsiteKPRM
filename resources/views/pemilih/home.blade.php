@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    KPRM 2020
+    KPRM Himanika 2020
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -44,7 +44,7 @@
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="/">
-          KPRM 2020 </a>
+          KPRM Himanika 2020 </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="title text-center" id="demo">Batas Akhir Pemilihan Calon Ketua BEM FISIP 2020</h1>
+          <h1 class="title text-center" id="demo">Batas Akhir Pemilihan Calon Ketua Himanika FISIP 2020</h1>
             <div class="row">
               <div class="col-md-2">
                 
@@ -91,8 +91,8 @@
     <div class="container">
       <div class="section text-center">
         @if($pemilihan->isEmpty())
-        <h2 class="title">Kandidat Calon Ketua BEM FISIP 2020</h2>
-        <h5 class="description">Silahkan lihat dan pilihlah kandidat ketua bem sesuai hatimu.</h5>
+        <h2 class="title">Kandidat Calon Ketua Himanika FISIP 2020</h2>
+        <h5 class="description">Silahkan lihat dan pilihlah kandidat ketua himpunan sesuai hatimu.</h5>
         <div class="team">
           <div class="row">
            
@@ -124,14 +124,14 @@
                   </div>
                   <h4 class="card-title">{{$i->nama}}
                     <br>
-                    <small class="card-description text-muted">Prodi {{$i->prodi}}</small>
+                    <small class="card-description text-muted">Angkatan {{$i->angkatan}}</small>
                   </h4>
                   <div class="card-body">
                     <p class="card-description"> {!! $i->deskripsi !!} 
                      </p>
                   </div>
                   <div class="card-footer justify-content-center">
-                  <button class="btn btn-danger btn-round" style="width:50% !important" onclick="location.href='/kandidat/{{$i->id}}'">
+                  <button class="btn btn-info btn-round" style="width:50% !important" onclick="location.href='/kandidat/{{$i->id}}'">
                      <i class="material-icons">person</i> Lihat kandidat
                    </button> 
                   </div>
@@ -150,7 +150,7 @@
           <div class="col-md-6 ml-auto mr-auto">
             <h2 class="title">Lihat Hasil </h2>
             <h5 class="description">Hasil Penghitungan Suara KPRM 2020 dapat dilihat dengan menekan tombol di bawah ini.</h5>
-             <button class="btn btn-danger btn-round" style="width:50% !important" onclick="location.href='/quickcount'">
+             <button class="btn btn-info btn-round" style="width:50% !important" onclick="location.href='/quickcount'">
                      <i class="material-icons">how_to_vote</i> Lihat hasil suara
                    </button>  
           </div>

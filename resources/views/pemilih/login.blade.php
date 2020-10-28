@@ -26,7 +26,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
+				<div class="login100-pic js-tilt">
 					<img src={{asset('login/images/img-02.png')}} alt="IMG">
 				</div>
 
@@ -82,11 +82,6 @@
 	<script src={{asset('login/vendor/select2/select2.min.js')}}></script>
 <!--===============================================================================================-->
 	<script src={{asset('login/vendor/tilt/tilt.jquery.min.js')}}></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
 <!--===============================================================================================-->
 	<script src={{asset('login/js/main.js')}}></script>
 

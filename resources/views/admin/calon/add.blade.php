@@ -62,14 +62,6 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="form-group bmd-form-group">
-                                    <label class="bmd-label-floating">Prodi</label>
-                                    <input type="text" name="prodi" class="form-control" >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
                                 <div class="fileinput fileinput-new pull-left" data-provides="fileinput">
                                     <div class="fileinput-preview fileinput-exists thumbnail img-raised"></div>
                                     <div>

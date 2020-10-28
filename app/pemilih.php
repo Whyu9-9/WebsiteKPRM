@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class pemilih extends Model
 {
-    protected $fillable = ['nim','nama','prodi','password'];
+    protected $fillable = ['nim','nama','angkatan','password'];
 }

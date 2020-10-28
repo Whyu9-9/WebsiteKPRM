@@ -41,7 +41,7 @@ class PemilihController extends Controller
          $this->validate($request, [
             'nim' => 'required',
             'nama' => 'required',
-            'prodi' => 'required'
+            'angkatan' => 'required'
         ]);
 
         $password = Str::random(8);
@@ -49,7 +49,7 @@ class PemilihController extends Controller
         $pemilih = new pemilih();
         $pemilih->nim = $request->nim;
         $pemilih->nama = $request->nama;
-        $pemilih->prodi = $request->prodi;
+        $pemilih->angkatan = $request->angkatan;
         $pemilih->password = $password;    
         $pemilih->save();
         
@@ -90,7 +90,7 @@ class PemilihController extends Controller
         $pemilih->id = $request->id;
         $pemilih->nim = $request->nim;
         $pemilih->nama = $request->nama;
-        $pemilih->prodi = $request->prodi;    
+        $pemilih->angkatan = $request->angkatan;    
         $pemilih->save();
         
         return redirect('admin/pemilih/');

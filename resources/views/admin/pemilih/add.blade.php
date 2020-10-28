@@ -37,16 +37,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group bmd-form-group">
-                                    <label class="bmd-label-floating"> Fakultas</label>
-                                    <input type="text" name="fakultas" class="form-control" id="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group bmd-form-group">
-                                    <label class="bmd-label-floating"> Prodi</label>
-                                    <input type="text" name="prodi" class="form-control" id="">
+                                    <label class="bmd-label-floating"> Angkatan</label>
+                                    <input type="text" name="angkatan" class="form-control" id="">
                                 </div>
                             </div>
                         </div>

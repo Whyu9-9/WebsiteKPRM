@@ -52,14 +52,6 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="form-group bmd-form-group">
-                                    <label class="bmd-label-floating">Prodi</label>
-                                    <input type="text" name="prodi" class="form-control" value="{{$calon->prodi}}">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
                                 <div class="fileinput fileinput-new pull-left" data-provides="fileinput">
                                      <div class="fileinput-new thumbnail img-raised">
                                      <img src="{{asset('data_file/'.$file)}}" alt="..." style="width:300px;height:300px;">

@@ -39,7 +39,7 @@
                           Nama
                         </th>
                         <th>
-                          Prodi
+                          Angkatan
                         </th>
                         <th>
                           Status
@@ -56,7 +56,7 @@
                               {{$i->nama}}
                             </td>
                             <td>
-                              {{$i->prodi}}
+                              {{$i->angkatan}}
                             </td>
                            
                             

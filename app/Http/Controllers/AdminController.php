@@ -102,6 +102,6 @@ class AdminController extends Controller
     {
          $pemilih = DB::table('pemilihans')->rightJoin('pemilihs','pemilihans.id_pemilih','=','pemilihs.id')->get();
          $pdf = PDF::loadview('admin.pemilih_pdf',compact('pemilih'));
-         return $pdf->stream();
+         return $pdf->download('pemilih.pdf');
     }
 }

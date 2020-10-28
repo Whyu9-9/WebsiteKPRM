@@ -24,9 +24,9 @@ class MilihController extends Controller
             //'Sep 30, 2020 00:00:00'
             //dd($new);
             if($today<=$new && $today>=$new_awal){
-                $inRange=false;
+                $inRange=true;
             }else{
-                 $inRange=true;
+                 $inRange=false;
                  //dd($new);
             }
             $new = "'".$new."'";
