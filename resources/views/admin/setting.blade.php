@@ -30,7 +30,7 @@
                     <table class="table">
                       <thead class=" text-warning">
                         <th>
-                          ID
+                          No.
                         </th>
                         <th>
                           Waktu Awal

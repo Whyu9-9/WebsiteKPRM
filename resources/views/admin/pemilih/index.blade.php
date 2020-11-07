@@ -32,10 +32,13 @@
                     <table class="table">
                       <thead class=" text-rose">
                         <th>
-                          ID
+                          No.
                         </th>
                         <th>
                           Nama
+                        </th>
+                        <th>
+                          Email
                         </th>
                         <th>
                           Angkatan
@@ -54,6 +57,9 @@
                             </td>
                             <td>
                               {{$i->nama}}
+                            </td>
+                            <td>
+                              {{$i->email}}
                             </td>
                             <td>
                               {{$i->angkatan}}

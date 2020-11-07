@@ -84,10 +84,13 @@
                   @else
                     <thead class="text-info">
                       <th>
-                          ID
+                          No.
                         </th>
                         <th>
                           Nama
+                        </th>
+                        <th>
+                          Email
                         </th>
                         <th>
                           Angkatan
@@ -101,6 +104,9 @@
                             </td>
                             <td>
                               {{$i->nama}}
+                            </td>
+                            <td>
+                              {{$i->email}}
                             </td>
                             <td>
                               {{$i->angkatan}}
@@ -133,7 +139,7 @@
                   @else
                     <thead class="text-info">
                       <th>
-                          ID
+                          No.
                         </th>
                         <th>
                           Nama

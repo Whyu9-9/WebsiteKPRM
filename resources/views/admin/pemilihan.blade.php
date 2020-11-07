@@ -39,6 +39,9 @@
                           Nama
                         </th>
                         <th>
+                          Email
+                        </th>
+                        <th>
                           Angkatan
                         </th>
                         <th>
@@ -56,15 +59,18 @@
                               {{$i->nama}}
                             </td>
                             <td>
+                              {{$i->email}}
+                            </td>
+                            <td>
                               {{$i->angkatan}}
                             </td>
                            
                             
                             <td class="td-actions text-left">
                                 @if ($i->id_calon==null)
-                                    <p class="text-danger">Belum</p>
+                                    <p class="text-danger">Belum Memilih</p>
                                 @else
-                                     <p class="text-success">Sudah</p>
+                                     <p class="text-success">Sudah Memilih</p>
                                 @endif
                                 
                               </td>

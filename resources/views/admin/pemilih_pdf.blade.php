@@ -14,12 +14,13 @@
 		<h5>Data Pemilih KPRM Himanika 2020</h4>
 	</center>
 
-	<table class='table table-bordered'>
+	<table style="border: 1px;">
 		<thead>
 			<tr>
                  <th>No</th>
                  <th>NIM</th>
-                 <th>Nama</th>
+				 <th>Nama</th>
+				 <th>Email</th>
                  <th>Angkatan</th>
 				<th>Status </th>
                         
@@ -35,7 +36,9 @@
 				 <td>
                               {{$i->nama}}
                             </td>
-                            
+                            <td>
+								{{$i->email}}
+							  </td>
                             <td>
                               {{$i->angkatan}}
 							</td>

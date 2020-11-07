@@ -32,7 +32,7 @@
                     <table class="table">
                       <thead class=" text-primary">
                         <th>
-                          ID
+                          No.
                         </th>
                         <th>
                           Nama

@@ -35,6 +35,14 @@
                             </div>
                         </div>
                         <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group bmd-form-group">
+                                  <label class="bmd-label-floating"> Email</label>
+                                  <input type="text" name="email" class="form-control" id="">
+                              </div>
+                          </div>
+                      </div>
+                        <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group bmd-form-group">
                                     <label class="bmd-label-floating"> Angkatan</label>

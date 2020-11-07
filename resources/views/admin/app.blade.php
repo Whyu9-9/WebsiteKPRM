@@ -29,7 +29,7 @@
     -->
       <div class="logo">
         <a href="/admin/home" class="simple-text logo-normal">
-          Admin KPRM
+          Admin Pemira
         </a>
       </div>
       <div class="sidebar-wrapper">

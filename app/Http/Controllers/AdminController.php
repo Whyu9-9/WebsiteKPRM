@@ -39,9 +39,6 @@ class AdminController extends Controller
 
      
     public function chart(Request $request) {
-        if(!$request->session()->has('pemilih')){
-            return redirect('/pemilih/login');
-         }else{
             $sql = db::table('pemilihans')->select('id_calon', 'id_pemilih')->get();
               $sqlcalons = db::table('calons')->select('id', 'nama')->get();
     
@@ -61,7 +58,7 @@ class AdminController extends Controller
               $hasil = json_encode($data);
               $calons = json_encode($calon);
             return view('admin.chart',compact('hasil','calons','data_suara','count_pemilihan'));
-        }
+        
        
     }
 

@@ -44,13 +44,12 @@ class PemilihController extends Controller
             'angkatan' => 'required'
         ]);
 
-        $password = Str::random(8);
-
         $pemilih = new pemilih();
         $pemilih->nim = $request->nim;
         $pemilih->nama = $request->nama;
+        $pemilih->email = $request->email;
         $pemilih->angkatan = $request->angkatan;
-        $pemilih->password = $password;    
+        $pemilih->password = $request->nim;    
         $pemilih->save();
         
         return redirect('admin/pemilih/');
@@ -90,6 +89,7 @@ class PemilihController extends Controller
         $pemilih->id = $request->id;
         $pemilih->nim = $request->nim;
         $pemilih->nama = $request->nama;
+        $pemilih->email = $request->email;
         $pemilih->angkatan = $request->angkatan;    
         $pemilih->save();
         
