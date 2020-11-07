@@ -18,7 +18,6 @@ class LoginController extends Controller
             ->where('password','=',$password)
             ->first();
                 if($data){
-                    
                       $request->session()->put('user',$data);
                         $get = $request->session()->get('user'); 
                         return redirect()->route('admin.home');   
@@ -42,7 +41,7 @@ class LoginController extends Controller
        $password = $request->password;
 
        if(!$request->session()->has('pemilih')){
-            $data = pemilih::where('nim','=',$user)
+            $data = pemilih::where('email','=',$user)
             ->where('password','=',$password)
             ->first();
                 if($data){

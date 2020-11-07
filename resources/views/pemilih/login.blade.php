@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login Peserta KPRM</title>
+	<title>Login Pemilih Pemira</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -36,10 +36,10 @@
 						Login Pemilih
 					</span>
 					<div class="wrap-input100 validate-input">
-						<input class="input100" type="text" name="username" placeholder="Username" data-validate = "Username is required">
+						<input class="input100" type="text" name="username" placeholder="Email" data-validate = "Username is required">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-" aria-hidden="true"></i>
+							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
 					</div>
 
@@ -50,7 +50,9 @@
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
-					
+					<div class="wrap-input100 validate-input" style="text-align: center">
+						<br><h6>Belum Punya Akun? Register </h6><a href="http://bit.ly/FormRegistrasiPemiraHimanika"><u><b>disini</b></u></a>
+					</div> 
 					<div class="container-login100-form-btn">
 						<input class="login100-form-btn" value="Login" type="submit" />
 					</div>
@@ -61,7 +63,7 @@
 					<div class="col-12">
 						@if(\Session::has('alert'))
 						<div class="alert alert-danger" style="display:block;float:left">
-							<div>{{Session::get('alert')}} test</div>
+							<div>{{Session::get('alert')}}</div>
 						</div>
           	 	 	@endif
 					</div>

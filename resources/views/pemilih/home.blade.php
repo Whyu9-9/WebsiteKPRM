@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    KPRM Himanika 2020
+    Pemira Himanika 2020
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -44,7 +44,7 @@
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="/">
-          KPRM Himanika 2020 </a>
+          Pemira Himanika 2020 </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -108,7 +108,7 @@
                                 Anda sudah melakukan Voting
                               </h2>
                          </div> 
-              @elseif($inRange)
+              @elseif($inRange == false)
                          <div class="col-md-12">
                               <h2>
                                 Waktu belum melakukan Voting

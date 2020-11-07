@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Calon;
 use App\pemilihan;
 use DB;
+Use \Carbon\Carbon;
 class MilihController extends Controller
 {
      public function index(Request $request) {
@@ -14,7 +15,7 @@ class MilihController extends Controller
         }else{
             $calon = Calon::all();
             $pemilih = $request->session()->get('pemilih');
-
+            date_default_timezone_set("Asia/Makassar");
             $pemilihan = pemilihan::where('id_pemilih','=',$pemilih->id)->get();
             $waktu_akhir = DB::table('setting_waktus')->pluck('waktu_akhir');
             $waktu_awal = DB::table('setting_waktus')->pluck('waktu_awal');
@@ -23,12 +24,12 @@ class MilihController extends Controller
             $new_awal = date("M d, Y H:i:s",strtotime($waktu_awal[0]));
             //'Sep 30, 2020 00:00:00'
             //dd($new);
-            if($today<=$new && $today>=$new_awal){
+            if($today>=$new_awal && $today<=$new){
                 $inRange=true;
             }else{
                  $inRange=false;
-                 //dd($new);
             }
+            //dd($inRange);
             $new = "'".$new."'";
             
             return view('pemilih.home',compact('calon','pemilihan','new','inRange'));
